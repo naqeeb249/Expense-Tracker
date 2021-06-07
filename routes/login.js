@@ -4,6 +4,7 @@ const controller = require('../controllers/login-controller');
 
 
 router.get('/login',controller.getLogin);
+router.post('/login',controller.postLogin);
 
 
 

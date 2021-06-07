@@ -7,6 +7,7 @@ const signUpRoute = require('./routes/sign-up');
 const loginROute  = require('./routes/login');
 const path = require('path');
 const rootDir = require('./util/path');
+require('dotenv').config();
 
 const sequelize = require('./util/database');
 const User = require('./models/users');
@@ -26,4 +27,6 @@ sequelize.sync()
     app.listen(4000);
 })
 .catch(err => console.log(err));
+
+
 
