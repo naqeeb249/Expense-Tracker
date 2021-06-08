@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+   <link rel="stylesheet" href="../public/css/expense-styles.css">
+
+    <nav class="navbar  navbar-dark bg-dark">
+        <a class="navbar-brand">Daily</a>
+        <!-- <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form> -->
+      </nav>
+</head>
+<body>
+<div class="form-div">
+    <form>
+        <div class="form-group">
+          <label for="formGroupExampleInput">Amount</label>
+          <input type="text" class="form-control" id="formGroupExampleInput">
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput2">Type</label>
+          <div class="input-group">
+            <select class="custom-select  btn btn-light" id="inputGroupSelect04" aria-label="Example select with button addon">
+              <option selected>Choose...</option>
+              <option value="1">Expense</option>
+              <option value="2">Income</option>
+            </select>
+           <!--  <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button">Select</button>
+            </div> -->
+          </div>
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput">Description</label>
+            <input type="text" class="form-control" id="formGroupExampleInput">
+          </div>
+          <button type="button" class="btn btn-dark add-btn">Add</button>
+      </form>
+</div>
+<div class="list">
+    <div class="expense-list">
+        <h3>My Expenses</h3>
+        <ul class="list-group">
+            <li class="list-group-item">Expense 1</li>
+            <li class="list-group-item">Expense 2</li>
+          </ul>
+    </div>
+    <div class="income-list">
+        <h3>My Income</h3>
+        <ul class="list-group">
+            <li class="list-group-item">Income  1</li>
+            <li class="list-group-item">Income 2</li>
+          </ul>
+    </div>
+</div>
+
+    
+</body>
+</html>
